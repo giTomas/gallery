@@ -1,0 +1,144 @@
+/*
+   Sass Reset - Converted by Hampton Catlin
+   A modification of the original found at...
+   http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: ''; }
+
+.clearfix:after {
+  clear: both; }
+
+.gallery__container {
+  width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 auto 100px;
+  cursor: pointer; }
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%; }
+
+.gallery__figure {
+  margin: 4px;
+  width: -webkit-calc(20% - 8px);
+  width: calc(20% - 8px);
+  overflow: hidden; }
+  @media (max-width: 800px) {
+    .gallery__figure {
+      width: -webkit-calc(25% - 8px);
+      width: calc(25% - 8px); } }
+  @media (max-width: 500px) {
+    .gallery__figure {
+      width: -webkit-calc(33.333% - 8px);
+      width: calc(33.333% - 8px); } }
+  @media (max-width: 350px) {
+    .gallery__figure {
+      width: -webkit-calc(50% - 8px);
+      width: calc(50% - 8px); } }
+
+.gallery__img {
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: -webkit-transform 0.22s linear;
+  transition: -webkit-transform 0.22s linear;
+  transition: transform 0.22s linear;
+  transition: transform 0.22s linear, -webkit-transform 0.22s linear; }
+  .gallery__img:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
+
+body {
+  background-color: #060606; }
+
+.header {
+  -webkit-box-shadow: 0 0 4px rgba(13, 13, 13, 0.9);
+          box-shadow: 0 0 4px rgba(13, 13, 13, 0.9);
+  margin-bottom: 20px; }
+
+.title {
+  font-family: sans-serif;
+  font-size: 40px;
+  padding: 30px 0 10px;
+  text-align: center;
+  color: white; }
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0; }
+  .modal p {
+    color: white;
+    position: absolute;
+    font-size: 500px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
