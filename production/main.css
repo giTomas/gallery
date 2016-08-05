@@ -114,8 +114,6 @@ body {
   background-color: #060606; }
 
 .header {
-  -webkit-box-shadow: 0 0 4px rgba(13, 13, 13, 0.9);
-          box-shadow: 0 0 4px rgba(13, 13, 13, 0.9);
   margin-bottom: 20px; }
 
 .title {
@@ -128,6 +126,7 @@ body {
 .modal {
   display: none;
   position: fixed;
+  background-color: rgba(6, 6, 6, 0);
   left: 0;
   top: 0;
   bottom: 0;
@@ -142,3 +141,21 @@ body {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+
+.c-image__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.c-image__image {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }

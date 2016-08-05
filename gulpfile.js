@@ -14,7 +14,7 @@ gulp.task('sass', function () {
         }))
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8'], { cascade: true }))
         .pipe(gulp.dest('production'))
-        .pipe(gulp.dest('sass'));
+        // .pipe(gulp.dest('sass'));
 });
 
 gulp.task('browserSync', function() {
